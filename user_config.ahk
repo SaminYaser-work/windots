@@ -22,6 +22,8 @@
 ; === END OF INSTRUCTIONS ===
 ; ===========================
 
+; Custom bindings
+; ------------------
 sc06F & 1::switchDesktopByNumber(1)
 sc06F & 2::switchDesktopByNumber(2)
 sc06F & 3::switchDesktopByNumber(3)
@@ -32,38 +34,30 @@ sc06F & 7::switchDesktopByNumber(7)
 sc06F & 8::switchDesktopByNumber(8)
 sc06F & 9::switchDesktopByNumber(9)
 
-; sc06F & Numpad1::switchDesktopByNumber(1)
-; sc06F & Numpad2::switchDesktopByNumber(2)
-; sc06F & Numpad3::switchDesktopByNumber(3)
-; sc06F & Numpad4::switchDesktopByNumber(4)
-; sc06F & Numpad5::switchDesktopByNumber(5)
-; sc06f & Numpad6::switchDesktopByNumber(6)
-; sc06f & Numpad7::switchDesktopByNumber(7)
-; sc06f & Numpad8::switchDesktopByNumber(8)
-; sc06f & Numpad9::switchDesktopByNumber(9)
-
 ; sc06f & n::switchDesktopToRight()
 ; sc06f & p::switchDesktopToLeft()
 ; sc06f & s::switchDesktopToRight()
 ; sc06f & a::switchDesktopToLeft()
-sc06f & tab::switchDesktopToLastOpened()
+; sc06f & Space::switchDesktopToLastOpened()
 
 sc06f & c::createVirtualDesktop()
 sc06f & d::deleteVirtualDesktop()
 
-; sc06f & q::MoveCurrentWindowToDesktop(1)
-; sc06f & w::MoveCurrentWindowToDesktop(2)
-; sc06f & e::MoveCurrentWindowToDesktop(3)
-; sc06f & r::MoveCurrentWindowToDesktop(4)
-; sc06f & t::MoveCurrentWindowToDesktop(5)
-; sc06f & y::MoveCurrentWindowToDesktop(6)
-; sc06f & u::MoveCurrentWindowToDesktop(7)
-; sc06f & i::MoveCurrentWindowToDesktop(8)
-; sc06f & o::MoveCurrentWindowToDesktop(9)
+; Tab & 1::MoveCurrentWindowToDesktop(1)
+; Tab & 2::MoveCurrentWindowToDesktop(2)
+; Tab & 3::MoveCurrentWindowToDesktop(3)
+; Tab & 4::MoveCurrentWindowToDesktop(4)
+; Tab & 5::MoveCurrentWindowToDesktop(5)
+; Tab & 6::MoveCurrentWindowToDesktop(6)
+; Tab & 7::MoveCurrentWindowToDesktop(7)
+; Tab & 8::MoveCurrentWindowToDesktop(8)
+; Tab & 9::MoveCurrentWindowToDesktop(9)
 
 sc06f & Right::MoveCurrentWindowToRightDesktop()
 sc06f & Left::MoveCurrentWindowToLeftDesktop()
 
+; Default bindings
+; --------------------
 ; CapsLock & 1::switchDesktopByNumber(1)
 ; CapsLock & 2::switchDesktopByNumber(2)
 ; CapsLock & 3::switchDesktopByNumber(3)
