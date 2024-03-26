@@ -48,28 +48,27 @@ sc06F & l::Right
 
 ; Firefox Personal
 sc06F & g::
-Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Firefox.lnk"
+    Run "C:\Users\samin\AppData\Local\Thorium\Application\thorium.exe"
 return
 
 ; Edge Work Profile
 sc06F & m::
-Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --profile-directory="Profile 1"
+    Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --profile-directory="Profile 1"
 return
-
 
 ; Windows Terminal
 sc06F & t::
-Run, "C:\Users\samin\AppData\Local\Microsoft\WindowsApps\wt.exe"
+    Run, "C:\Users\samin\AppData\Local\Microsoft\WindowsApps\wt.exe"
 return
 
 ; Visual Studio Code
 sc06F & v::
-Run, "C:\Users\samin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk"
+    Run, "C:\Users\samin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk"
 return
 
 ;Obsidian
 sc06F & n::
-Run, "C:\Users\samin\AppData\Local\Obsidian\Obsidian.exe"
+    Run, "C:\Users\samin\AppData\Local\Obsidian\Obsidian.exe"
 return
 
 ;Notes
@@ -77,14 +76,14 @@ return
 
 ; Close program
 sc06F & q::
-WinGetTitle, Title, A
-PostMessage, 0x112, 0xF060,,, %Title%
+    WinGetTitle, Title, A
+    PostMessage, 0x112, 0xF060,,, %Title%
 return
 
 ; Keep window always on top
 ; AppsKey::
 sc06F & p::
-WinSet, AlwaysOnTop, , A
+    WinSet, AlwaysOnTop, , A
 return
 
 ; Powertoys Shortcuts
@@ -102,7 +101,6 @@ return
 ; Shortcut guide
 ;sc06F & /::#^!+/
 
-
 ;--------------------------
 ; Hotstrings
 ;--------------------------
@@ -115,7 +113,7 @@ return
 :*:]mailo::saminthekingyaser@outlook.com
 
 :*:]mails::19-39442-1@student.aiub.edu
-
+:*:]uni::American International University-Bangladesh
 
 ; Socials
 :*:]facebook::https://www.facebook.com/RealSaminYaser/
@@ -129,7 +127,6 @@ return
 :*:]arsalam::ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ
 :*:]thank::جَزَاكَ ٱللَّٰهُ خَيْرًا
 
-
 :*:]eins::Insha'Allah
 :*:]ins::إِنْ شَاءَ ٱللَّٰهُ
 
@@ -137,12 +134,12 @@ return
 :*:]alh::ٱلْحَمْدُ لِلَّٰهِ
 
 :*:]ssaw::{U+FDFA}
-:*:]saw::صَلَّى ٱللَّٰهُ عَلَيْهِ وَسَلَّمَ
+    :*:]saw::صَلَّى ٱللَّٰهُ عَلَيْهِ وَسَلَّمَ
 
-:*:]allah::Allah {U+FDFB}
+    :*:]allah::Allah {U+FDFB}
 
 :*:]sbis::{U+FDFD}
-:*:]bis::بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+    :*:]bis::بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
 
-:*:]eas::'Alayhi s-salam
-:*:]as::عَلَيْهِ ٱلسَّلَامُ
+    :*:]eas::'Alayhi s-salam
+    :*:]as::عَلَيْهِ ٱلسَّلَامُ
