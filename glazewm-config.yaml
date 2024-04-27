@@ -7,13 +7,13 @@ general:
 
   # Whether to switch back and forth between the previously focused workspace
   # when focusing the current workspace.
-  toggle_workspace_on_refocus: true
+  toggle_workspace_on_refocus: false
 
   # Whether to show floating windows as always on top.
   show_floating_on_top: false
 
   # Amount to move floating windows by (eg. when using `alt+<hjkl>` on a floating window)
-  floating_window_move_amount: "5%"
+  floating_window_move_amount: "10%"
 
   # Whether to center new floating windows.
   center_new_floating_windows: true
@@ -21,7 +21,7 @@ general:
   # *Strongly* recommended to set to 'false'. Whether to globally enable/disable
   # window transition animations (on minimize, close, etc). Set to 'unchanged'
   # to make no setting changes.
-  window_animations: "unchanged"
+  window_animations: false
 
 gaps:
   # Gap between adjacent windows.
@@ -66,8 +66,8 @@ bar:
       label_horizontal: "⮂"
       label_vertical: "⮁"
       background: "#427b58"
-      margin: "0 4px"
       padding: "0 8px"
+      margin: "0 0 0 30px"
 
     - type: "binding mode"
       background: "#ffffff33"
@@ -75,8 +75,9 @@ bar:
       padding: "0 8px"
 
     - type: "window title"
+      margin: "0 0 0 10px"
 
-  # components_center:
+  components_center:
   #   - type: "network"
   #     label_no_internet: "NC"
   #     label_ethernet: "Eth"
@@ -85,20 +86,27 @@ bar:
   #     label_wifi_strength_50: "WiFi: 50%"
   #     label_wifi_strength_75: "WiFi: 75%"
   #     label_wifi_strength_100: "WiFi: 100%"
+    - type: "clock"
+      # Documentation on formatting date/time string:
+      # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
+      time_formatting: "hh:mm:ss tt, dddd dd/MM/yyyy, MMMM"
+      # background: "#689d6a"
+      # foreground: "white"
+      # padding: 2px 5px
 
   components_right:
-    - type: "music"
-      label_not_playing: ""
-      label_paused: " {song_title} - {artist_name}"
-      label_playing: " {song_title} - {artist_name}"
-      max_title_length: 20
-      max_artist_length: 20
+    # - type: "music"
+    #   label_not_playing: ""
+    #   label_paused: " {song_title} - {artist_name}"
+    #   label_playing: " {song_title} - {artist_name}"
+    #   max_title_length: 20
+    #   max_artist_length: 20
       # background: "#689d6a"
       # padding: 0 10px 0 10px
 
     - type: "weather"
-      latitude: 23.777176
-      longitude: 90.399452
+      latitude: 23.74882
+      longitude: 90.38182
       label: "{temperature_celsius}°C"
       label_sun: "☀️ {temperature_celsius}°C"
       label_moon: "🌙 {temperature_celsius}°C"
@@ -148,18 +156,12 @@ bar:
       foreground: "white"
       padding: 2px 5px
 
-    - type: "clock"
-      # Documentation on formatting date/time string:
-      # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
-      time_formatting: "hh:mm:ss tt, ddd MMM d, yyyy"
-      background: "#689d6a"
-      foreground: "white"
-      padding: 2px 5px
 
     - type: "system tray"
 
 workspaces:
   - name: "1"
+    # bind_to_monitor: "1"
   - name: "2"
   - name: "3"
   - name: "4"
