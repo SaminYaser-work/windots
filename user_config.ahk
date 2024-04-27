@@ -24,15 +24,15 @@
 
 ; Custom bindings
 ; ------------------
-sc06F & 1::switchDesktopByNumber(1)
-sc06F & 2::switchDesktopByNumber(2)
-sc06F & 3::switchDesktopByNumber(3)
-sc06F & 4::switchDesktopByNumber(4)
-sc06F & 5::switchDesktopByNumber(5)
-sc06F & 6::switchDesktopByNumber(6)
-sc06F & 7::switchDesktopByNumber(7)
-sc06F & 8::switchDesktopByNumber(8)
-sc06F & 9::switchDesktopByNumber(9)
+; sc06F & 1::switchDesktopByNumber(1)
+; sc06F & 2::switchDesktopByNumber(2)
+; sc06F & 3::switchDesktopByNumber(3)
+; sc06F & 4::switchDesktopByNumber(4)
+; sc06F & 5::switchDesktopByNumber(5)
+; sc06F & 6::switchDesktopByNumber(6)
+; sc06F & 7::switchDesktopByNumber(7)
+; sc06F & 8::switchDesktopByNumber(8)
+; sc06F & 9::switchDesktopByNumber(9)
 
 ; sc06f & n::switchDesktopToRight()
 ; sc06f & p::switchDesktopToLeft()
@@ -40,8 +40,8 @@ sc06F & 9::switchDesktopByNumber(9)
 ; sc06f & a::switchDesktopToLeft()
 ; sc06f & Space::switchDesktopToLastOpened()
 
-sc06f & c::createVirtualDesktop()
-sc06f & d::deleteVirtualDesktop()
+; sc06f & c::createVirtualDesktop()
+; sc06f & d::deleteVirtualDesktop()
 
 ; Tab & 1::MoveCurrentWindowToDesktop(1)
 ; Tab & 2::MoveCurrentWindowToDesktop(2)
@@ -53,8 +53,8 @@ sc06f & d::deleteVirtualDesktop()
 ; Tab & 8::MoveCurrentWindowToDesktop(8)
 ; Tab & 9::MoveCurrentWindowToDesktop(9)
 
-sc06f & Right::MoveCurrentWindowToRightDesktop()
-sc06f & Left::MoveCurrentWindowToLeftDesktop()
+; sc06f & Right::MoveCurrentWindowToRightDesktop()
+; sc06f & Left::MoveCurrentWindowToLeftDesktop()
 
 ; Default bindings
 ; --------------------
