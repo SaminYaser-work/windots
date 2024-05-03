@@ -89,7 +89,7 @@ bar:
     - type: "clock"
       # Documentation on formatting date/time string:
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
-      time_formatting: "hh:mm:ss tt, dddd dd/MM/yyyy, MMMM"
+      time_formatting: "hh:mm:ss tt, MMMM, dddd, dd/MM/yyyy"
       # background: "#689d6a"
       # foreground: "white"
       # padding: 2px 5px

@@ -21,65 +21,65 @@ return
 ; sc06F & l::Right
 
 ; GlazeWM Bindings
-sc06F & 1::SendGlazeWMInput(1)
-sc06F & 2::SendGlazeWMInput(2)
-sc06F & 3::SendGlazeWMInput(3)
-sc06F & 4::SendGlazeWMInput(4)
-sc06F & 5::SendGlazeWMInput(5)
-sc06F & 6::SendGlazeWMInput(6)
-sc06F & 7::SendGlazeWMInput(7)
-sc06F & 8::SendGlazeWMInput(8)
-sc06F & 9::SendGlazeWMInput(9)
+; sc06F & 1::SendGlazeWMInput(1)
+; sc06F & 2::SendGlazeWMInput(2)
+; sc06F & 3::SendGlazeWMInput(3)
+; sc06F & 4::SendGlazeWMInput(4)
+; sc06F & 5::SendGlazeWMInput(5)
+; sc06F & 6::SendGlazeWMInput(6)
+; sc06F & 7::SendGlazeWMInput(7)
+; sc06F & 8::SendGlazeWMInput(8)
+; sc06F & 9::SendGlazeWMInput(9)
 
-sc06F & h::SendGlazeWMInput("h")
-sc06F & j::SendGlazeWMInput("j")
-sc06F & k::SendGlazeWMInput("k")
-sc06F & l::SendGlazeWMInput("l")
+; sc06F & h::SendGlazeWMInput("h")
+; sc06F & j::SendGlazeWMInput("j")
+; sc06F & k::SendGlazeWMInput("k")
+; sc06F & l::SendGlazeWMInput("l")
 
-sc06F & b::SendGlazeWMInput("b")
-sc06F & x::SendGlazeWMInput("x")
-sc06F & v::SendGlazeWMInput("v")
-sc06F & f::SendGlazeWMInput("f")
+; sc06F & b::SendGlazeWMInput("b")
+; sc06F & x::SendGlazeWMInput("x")
+; sc06F & v::SendGlazeWMInput("v")
+; sc06F & f::SendGlazeWMInput("f")
 
-sc06F & r::SendGlazeWMInput("r")
-sc06F & e::SendGlazeWMInput("e")
+; sc06F & r::SendGlazeWMInput("r")
+; sc06F & e::SendGlazeWMInput("e")
 
-sc06F & Up::SendGlazeWMInput(Up)
-sc06F & Down::SendGlazeWMInput(Down)
-sc06F & Right::SendGlazeWMInput(Right)
-sc06F & Left::SendGlazeWMInput(Left)
+; sc06F & Up::SendGlazeWMInput(Up)
+; sc06F & Down::SendGlazeWMInput(Down)
+; sc06F & Right::SendGlazeWMInput(Right)
+; sc06F & Left::SendGlazeWMInput(Left)
 
-SendGlazeWMInput(num) {
-    if GetKeyState("Shift", "P") {
-        SendInput, {F23 Down}
-        Sleep, 5
-        SendInput, {F24 Down}
-        Sleep, 5
-        SendInput, {%num%}
-        Sleep, 5
-        SendInput, {F24 Up}
-        Sleep, 5
-        SendInput, {F23 Up}
-    } else if GetKeyState("Ctrl", "P") {
-        SendInput, {F22 Down}
-        Sleep, 5
-        SendInput, {F24 Down}
-        Sleep, 5
-        SendInput, {%num%}
-        Sleep, 5
-        SendInput, {F24 Up}
-        Sleep, 5
-        SendInput, {F22 Up}
-    }
-    else {
-        SendInput, {F24 Down}
-        Sleep, 5
-        SendInput, {%num%}
-        Sleep, 5
-        SendInput, {F24 Up}
-    }
-}
-return
+; SendGlazeWMInput(num) {
+;     if GetKeyState("Shift", "P") {
+;         SendInput, {F23 Down}
+;         Sleep, 5
+;         SendInput, {F24 Down}
+;         Sleep, 5
+;         SendInput, {%num%}
+;         Sleep, 5
+;         SendInput, {F24 Up}
+;         Sleep, 5
+;         SendInput, {F23 Up}
+;     } else if GetKeyState("Ctrl", "P") {
+;         SendInput, {F22 Down}
+;         Sleep, 5
+;         SendInput, {F24 Down}
+;         Sleep, 5
+;         SendInput, {%num%}
+;         Sleep, 5
+;         SendInput, {F24 Up}
+;         Sleep, 5
+;         SendInput, {F22 Up}
+;     }
+;     else {
+;         SendInput, {F24 Down}
+;         Sleep, 5
+;         SendInput, {%num%}
+;         Sleep, 5
+;         SendInput, {F24 Up}
+;     }
+; }
+; return
 
 ; App Launch Shortcuts
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,7 +106,7 @@ sc06F & q::
 return
 
 ; Keep window always on top
-AppsKey::
+; AppsKey::
 sc06F & p::
     WinSet, AlwaysOnTop, , A
 return
