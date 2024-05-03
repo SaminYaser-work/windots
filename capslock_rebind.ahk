@@ -10,15 +10,61 @@ SendEsc:
     SendInput, {Esc}
 return
 
-; sc06F::
-;     SendInput, {Browser_Back Down}
-; return
-
 ; Vim-like bindings
-; sc06F & h::Left
-; sc06F & j::Down
-; sc06F & k::Up
-; sc06F & l::Right
+sc06F & h::Left
+sc06F & j::Down
+sc06F & k::Up
+sc06F & l::Right
+
+
+; App Launch Shortcuts
+;~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+; Personal Browser
+sc06F & g::
+    personal_browser := "C:\Users\" A_UserName "\AppData\Local\Thorium\Application\thorium.exe --profile-directory=""default"""
+    Run, %personal_browser%
+return
+
+; Work Browser
+sc06F & m::
+    work_browser := "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe --profile-directory=""Profile 1"""
+    Run, %work_browser%
+return
+
+; Windows Terminal
+sc06F & t::
+    terminal := "C:\Users\" A_UserName "\AppData\Local\Microsoft\WindowsApps\wt.exe"
+    Run, %terminal%
+return
+
+; Close program
+sc06F & q::
+    WinGetTitle, Title, A
+    PostMessage, 0x112, 0xF060,,, %Title%
+return
+
+; Keep window always on top
+; AppsKey::
+sc06F & p::
+    WinSet, AlwaysOnTop, , A
+return
+
+
+;------------------------
+; GlazeWM
+;------------------------
+
+; sc06F & o::
+;     Process, Exist, GlazeWM.exe
+;     pid := ErrorLevel  ; ErrorLevel contains the PID of the process if it exists, 0 otherwise
+
+;     if (pid == 0) {
+;         Run, "C:\Users\samin\scoop\apps\glazewm\current\GlazeWM.exe" --config="C:\Users\samin\Documents\Scripts\glazewm-config.yaml"
+;     } else {
+;         MsgBox, "GlazeWM is already running!"
+;     }
+; return 
 
 ; GlazeWM Bindings
 ; sc06F & 1::SendGlazeWMInput(1)
@@ -80,45 +126,3 @@ return
 ;     }
 ; }
 ; return
-
-; App Launch Shortcuts
-;~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-; Personal Browser
-sc06F & g::
-    Run, "C:\Users\samin\AppData\Local\Thorium\Application\thorium.exe"
-return
-
-; Work Browser
-sc06F & m::
-    Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --profile-directory="Profile 1"
-return
-
-; Windows Terminal
-sc06F & t::
-    Run, "C:\Users\samin\AppData\Local\Microsoft\WindowsApps\wt.exe"
-return
-
-; Close program
-sc06F & q::
-    WinGetTitle, Title, A
-    PostMessage, 0x112, 0xF060,,, %Title%
-return
-
-; Keep window always on top
-; AppsKey::
-sc06F & p::
-    WinSet, AlwaysOnTop, , A
-return
-
-
-; sc06F & o::
-;     Process, Exist, GlazeWM.exe
-;     pid := ErrorLevel  ; ErrorLevel contains the PID of the process if it exists, 0 otherwise
-
-;     if (pid == 0) {
-;         Run, "C:\Users\samin\scoop\apps\glazewm\current\GlazeWM.exe" --config="C:\Users\samin\Documents\Scripts\glazewm-config.yaml"
-;     } else {
-;         MsgBox, "GlazeWM is already running!"
-;     }
-; return 
