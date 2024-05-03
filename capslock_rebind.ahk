@@ -112,13 +112,13 @@ sc06F & p::
 return
 
 
-sc06F & o::
-    Process, Exist, GlazeWM.exe
-    pid := ErrorLevel  ; ErrorLevel contains the PID of the process if it exists, 0 otherwise
+; sc06F & o::
+;     Process, Exist, GlazeWM.exe
+;     pid := ErrorLevel  ; ErrorLevel contains the PID of the process if it exists, 0 otherwise
 
-    if (pid == 0) {
-        Run, "C:\Users\samin\scoop\apps\glazewm\current\GlazeWM.exe" --config="C:\Users\samin\Documents\Scripts\glazewm-config.yaml"
-    } else {
-        MsgBox, "GlazeWM is already running!"
-    }
-return 
+;     if (pid == 0) {
+;         Run, "C:\Users\samin\scoop\apps\glazewm\current\GlazeWM.exe" --config="C:\Users\samin\Documents\Scripts\glazewm-config.yaml"
+;     } else {
+;         MsgBox, "GlazeWM is already running!"
+;     }
+; return 

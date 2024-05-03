@@ -34,11 +34,11 @@ sc06F & 7::switchDesktopByNumber(7)
 sc06F & 8::switchDesktopByNumber(8)
 sc06F & 9::switchDesktopByNumber(9)
 
-sc06f & n::switchDesktopToRight()
-sc06f & p::switchDesktopToLeft()
-sc06f & s::switchDesktopToRight()
-sc06f & a::switchDesktopToLeft()
-sc06f & Space::switchDesktopToLastOpened()
+; sc06f & n::switchDesktopToRight()
+; sc06f & p::switchDesktopToLeft()
+; sc06f & s::switchDesktopToRight()
+; sc06f & a::switchDesktopToLeft()
+; sc06f & Space::switchDesktopToLastOpened()
 
 sc06f & c::createVirtualDesktop()
 sc06f & d::deleteVirtualDesktop()
@@ -167,20 +167,20 @@ sc06f & d::deleteVirtualDesktop()
 ; ^#+Left::MoveCurrentWindowToLeftDesktop()
 
 ; Move windows between desktop
-; #Left::
-;   WinGetTitle, Title, A
-;   WinSet, ExStyle, ^0x80, %Title%
-;   Send {LWin down}{Ctrl down}{Left}{Ctrl up}{LWin up}
-;   sleep, 50
-;   WinSet, ExStyle, ^0x80, %Title%
-;   WinActivate, %Title%
-; Return
+sc06F & Left::
+  WinGetTitle, Title, A
+  WinSet, ExStyle, ^0x80, %Title%
+  Send {LWin down}{Ctrl down}{Left}{Ctrl up}{LWin up}
+  sleep, 50
+  WinSet, ExStyle, ^0x80, %Title%
+  WinActivate, %Title%
+Return
 
-; #Right::
-;   WinGetTitle, Title, A
-;   WinSet, ExStyle, ^0x80, %Title%
-;   Send {LWin down}{Ctrl down}{Right}{Ctrl up}{LWin up}
-;   sleep, 50
-;   WinSet, ExStyle, ^0x80, %Title%
-;   WinActivate, %Title%
-; Return
+sc06f & Right::
+  WinGetTitle, Title, A
+  WinSet, ExStyle, ^0x80, %Title%
+  Send {LWin down}{Ctrl down}{Right}{Ctrl up}{LWin up}
+  sleep, 50
+  WinSet, ExStyle, ^0x80, %Title%
+  WinActivate, %Title%
+Return
