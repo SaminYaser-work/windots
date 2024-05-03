@@ -27,9 +27,9 @@ function Get-AbsPath {
 }
 
 # Rebind script
-# $ahk_script_path = Get-AbsPath -name "desktop_switcher.ahk"
-# Start-Process -FilePath $ahk_script_path
-# AddToStartup -target $ahk_script_path -name "desktop_switcher"
+$ahk_script_path = Get-AbsPath -name "desktop_switcher.ahk"
+Start-Process -FilePath $ahk_script_path
+AddToStartup -target $ahk_script_path -name "desktop_switcher"
 
 # GlazeWM
 # C:\Users\samin\scoop\apps\glazewm\current\GlazeWM.exe --config="C:\Users\samin\Documents\Scripts\glazewm-config.yaml"
