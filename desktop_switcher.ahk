@@ -24,7 +24,6 @@ OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 ; Imports
 #Include %A_ScriptDir%\capslock_rebind.ahk
 #Include %A_ScriptDir%\user_config.ahk
-#Include, %A_ScriptDir%\hotstrings.ahk
 return
 
 ;
