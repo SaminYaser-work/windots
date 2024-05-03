@@ -52,7 +52,7 @@ manipulateWindow(key) {
 }
 return
 
-; Move windows between desktop
+; Move windows between immediate left and right
 sc06F & Left::
   WinGetTitle, Title, A
   WinSet, ExStyle, ^0x80, %Title%
