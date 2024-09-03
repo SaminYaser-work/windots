@@ -25,15 +25,15 @@
 ; Custom bindings
 ; ------------------
 
-sc06F & 1::manipulateWindow(1)
-sc06F & 2::manipulateWindow(2)
-sc06F & 3::manipulateWindow(3)
-sc06F & 4::manipulateWindow(4)
-sc06F & 5::manipulateWindow(5)
-sc06F & 6::manipulateWindow(6)
-sc06F & 7::manipulateWindow(7)
-sc06F & 8::manipulateWindow(8)
-sc06F & 9::manipulateWindow(9)
+; sc06F & 1::manipulateWindow(1)
+; sc06F & 2::manipulateWindow(2)
+; sc06F & 3::manipulateWindow(3)
+; sc06F & 4::manipulateWindow(4)
+; sc06F & 5::manipulateWindow(5)
+; sc06F & 6::manipulateWindow(6)
+; sc06F & 7::manipulateWindow(7)
+; sc06F & 8::manipulateWindow(8)
+; sc06F & 9::manipulateWindow(9)
 
 ; sc06f & s::switchDesktopToRight()
 ; sc06f & a::switchDesktopToLeft()

@@ -28,7 +28,7 @@ return
 
 ; Work Browser
 sc06F & m::
-    work_browser := "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe --profile-directory=""Profile 1"""
+    work_browser := "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
     Run, %work_browser%
 return
 

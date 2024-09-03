@@ -23,6 +23,7 @@ OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 
 ; Imports
 #Include %A_ScriptDir%\capslock_rebind.ahk
+#Include %A_ScriptDir%\desktop_switcher2.ahk
 #Include %A_ScriptDir%\user_config.ahk
 return
 
