@@ -64,7 +64,8 @@ SetWorkingDir, %A_ScriptDir%
 ;--------------------------
 
 ; Mails
-:*:]mailp::saminthekingyaser@gmail.com
+:*:]mailp1::saminthekingyaser@gmail.com
+:*:]mailp2::saminyaserpersonal@gmail.com
 
 :*:]mailw::saminyaserwork@gmail.com
 
