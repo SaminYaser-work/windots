@@ -1,4 +1,6 @@
-﻿;--------------------------
+﻿#Include %A_ScriptDir%\config.ahk
+
+;--------------------------
 ; Rebinds
 ;--------------------------
 
@@ -22,24 +24,20 @@ sc06F & l::Right
 
 ; Personal Browser
 sc06F & g::
-    personal_browser := "C:\Users\" A_UserName "\AppData\Local\Thorium\Application\thorium.exe --profile-directory=""default"""
     Run, %personal_browser%
 return
 
 sc06F & w::
-    personal_browser := "C:\Users\" A_UserName "\AppData\Local\Thorium\Application\thorium.exe --profile-directory=""Profile 1"""
-    Run, %personal_browser%
+    Run, %dev_browser%
 return
 
 ; Work Browser
 sc06F & m::
-    work_browser := "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
     Run, %work_browser%
 return
 
 ; Windows Terminal
 sc06F & t::
-    terminal := "C:\Users\" A_UserName "\AppData\Local\Microsoft\WindowsApps\wt.exe"
     Run, %terminal%
 return
 
