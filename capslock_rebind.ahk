@@ -26,6 +26,11 @@ sc06F & g::
     Run, %personal_browser%
 return
 
+sc06F & w::
+    personal_browser := "C:\Users\" A_UserName "\AppData\Local\Thorium\Application\thorium.exe --profile-directory=""Profile 1"""
+    Run, %personal_browser%
+return
+
 ; Work Browser
 sc06F & m::
     work_browser := "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
