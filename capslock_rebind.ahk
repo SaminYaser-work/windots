@@ -1,4 +1,8 @@
-﻿#Include %A_ScriptDir%\config.ahk
+﻿#SingleInstance, Force
+SendMode Input
+SetWorkingDir, %A_ScriptDir%
+
+#Include %A_ScriptDir%\config.ahk
 
 ;--------------------------
 ; Rebinds
@@ -17,6 +21,7 @@ sc06F & h::Left
 sc06F & j::Down
 sc06F & k::Up
 sc06F & l::Right
+
 
 
 ; App Launch Shortcuts
@@ -52,10 +57,6 @@ return
 sc06F & p::
     WinSet, AlwaysOnTop, , A
 return
-
-#SingleInstance, Force
-SendMode Input
-SetWorkingDir, %A_ScriptDir%
 
 ;--------------------------
 ; Hotstrings
