@@ -39,37 +39,6 @@
 ; sc06f & a::switchDesktopToLeft()
 ; sc06f & Space::switchDesktopToLastOpened()
 
-sc06f & c::createVirtualDesktop()
-sc06f & d::deleteVirtualDesktop()
-
-manipulateWindow(key) {
-  if GetKeyState("Shift", "P") {
-    MoveCurrentWindowToDesktop(key)
-  }
-  else {
-    switchDesktopByNumber(key)
-  }
-}
-return
-
-; Move windows between immediate left and right
-sc06F & Left::
-  WinGetTitle, Title, A
-  WinSet, ExStyle, ^0x80, %Title%
-  Send {LWin down}{Ctrl down}{Left}{Ctrl up}{LWin up}
-  sleep, 50
-  WinSet, ExStyle, ^0x80, %Title%
-  WinActivate, %Title%
-Return
-
-sc06f & Right::
-  WinGetTitle, Title, A
-  WinSet, ExStyle, ^0x80, %Title%
-  Send {LWin down}{Ctrl down}{Right}{Ctrl up}{LWin up}
-  sleep, 50
-  WinSet, ExStyle, ^0x80, %Title%
-  WinActivate, %Title%
-Return
 
 
 
